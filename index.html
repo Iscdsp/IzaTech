@@ -11,14 +11,14 @@
     <title>Home Page</title>
 </head>
 <body class="body">
-    <header class="header">
+    <header id="header" class="header">
         <div class="logo-redesSociais-bandeira">
             <img src="./imagens/logo-izatech.png" alt="Logo da Izatech" width="80px" height="70px">
             <div class="redes-sociais">
-                <span class="icone icon-facebook2"></span>
-                <span class="icone icon-linkedin"></span>
-                <span class="icone icon-instagram"></span>
-                <span class="icone icon-twitter"></span>
+                <a href="https://www.facebook.com/IZATECH.BRASIL" target="_blank"><span class="icone icon-facebook2"></span></a>
+                    <a href="https://www.linkedin.com/in/izatech-gerenciamento-empreendedorismo-gest%C3%A3o-de-neg%C3%B3cios-62798587/" target="_blank"><span class=" icone icon-linkedin"></span></a>
+                    <a href="https://www.instagram.com/izatech.gerenciamento/" target="_blank"><span class=" icone icon-instagram"></span></a>
+                    <a href="https://twitter.com/izatech11" target="_blank"><span class=" icone icon-twitter"></span></a>
             </div>
             <img src="./imagens/brazil.png" alt="" width="64px" height="58px">
         </div>
@@ -27,18 +27,17 @@
     <aside>
         <nav>
             <ul class="menu-navegacao">
-                <li><a href="">Conceitos</a></li>
-                <li><a href="http://">Gerenciamento de projetos</a></li>
-                <li> <a href="http://">Representação Comercial</a></li>
-                <li><a href="http://">Parceiros Empreendedores</a></li>
-                <li><a href="http://">Quem Somos</a></li>
+                <li><a href="#header" >Conceitos</a></li>
+                <li><a href="#concept" >Gerenciamento de projetos</a></li>
+                <li> <a href="#manager" >Representação Comercial</a></li>
+                <li><a href="#representa" >Parceiros Empreendedores</a></li>
+                <li><a href="#quem-somos">Quem Somos</a></li>
                 <li><a href="http://">Nosso Blog</a></li>
                 <li><a href="http://">Contato</a></li>
             </ul>
         </nav>
     </aside>
     <hr>
-    <section class="corpo">
         <div class="izatech-container">
             <div class="container-iza">
                 <span><p>IZATECH</p></span>
@@ -46,7 +45,7 @@
                 <span class="anos13">13 anos</span>
             </div>
     </div>
-    <section class="concept-container">
+    <section id="concept" class="concept-container">
         <fieldset class="concept-content">
             <legend><h1>Gerenciamento de Projetos - PMI - PMBOK&reg;- Sixth edition</h1></legend>
             <p>“Um projeto é um empreendimento único de esforço temporário definido para criar um produto, serviço ou resultado exclusivo. Os projetos e as operações diferem, principalmente, no fato de que projetos são temporários e exclusivos, operações são contínuas e repetitivas.(PMBOK GUIDE)</p>
@@ -87,10 +86,11 @@
                 
             </div> 
         </article> 
-        <span class="btn"><a href="#" >Fale Conosco</a></span>   
+           
     </section>
+    <span class="btn"><a href="#" >Fale Conosco</a></span>
     <div class="smart-card"></div>
-    <section class="project-manager-container">
+    <section id="manager" class="project-manager-container">
          <fieldset class="field-proj">
             <legend><h1>Gerenciamento de Projetos e Obras</h1></legend>
             <div class="container-ger-proj-obras">
@@ -236,9 +236,10 @@
                 </ul>
             </div>
         </div>
-        <span class="btn"><a href="#">Fale Conosco</a></span>
+        
     </section>
-    <section class="representation-container">
+    <span class="btn"><a href="#">Fale Conosco</a></span>
+    <section id="representa" class="representation-container">
         <h2>Quem somos no mercado</h2>
         <div class="we-are-text-container">
             <span class="way"></span>
@@ -260,7 +261,7 @@
         <div class="parceria-texto-imagem">
             <div class="parc-img-cont">
                 <img src="/imagens/fortalecer-ori.jpg" alt="" class="fort-11-img" >
-                <img src="/imagens/fortalecer.png" alt="" class="fort-22-img" >
+                <img src="/imagens/fortalecer.png" alt="" class="fort-22-img">
             </div>
             <div class="texto-parc">
                 <h2>Fortalecemos Nossa Parceria e Nossos Parceiros</h2>
@@ -281,172 +282,199 @@
             </div>
         </section>
 
-        <hr>
 
-        <h1>GRANDES PARCEIROS EM GRANDES PROJETOS</h1>
+        <section class="container-img-partners">
+            <h1>GRANDES PARCEIROS EM GRANDES PROJETOS</h1>
         <div class="container-thumbs-parceiros">
-            <div>
-                <img src="" alt="">
-                <h3>HILL International Inc.</h3>
+            <div class="card-parceiros ">
+                <img src="/imagens/parceiros/hill-lg.png" alt="">
+                <div class="text-card-parc ">
+                    <h3>HILL International Inc.</h3>
                 <ul>
                     <li>GRAND HYATT HOTELS/RJ – Barra da Tijuca/RJ<br>
-
-                        Orçamento, planejamento de obra, viabilidade técnica/financeira e coordenação de instalações</li>
+                    Orçamento, planejamento de obra, viabilidade técnica/financeira e coordenação de instalações</li>
                 </ul>
+                </div>
             </div>
-            <div>
-                <img src="" alt="">
-                <h3>G3 Empreendimentos / JP Projetos</h3>
-                <ul>
-                    <li>VIA PAVUNA Shopping – Pavuna/RJ<br>
-
-                        Gerencia de Operações na execução e planejamento de obra, viabilidade técnica/financeira e coordenação</li>
-                </ul>
+            <div class="card-parceiros">
+                <img src="/imagens/parceiros/jpProj-lg.png" alt="">
+                <div class="text-card-parc">
+                    <h3>G3 Empreendimentos / JP Projetos</h3>
+                    <ul>
+                        <li>VIA PAVUNA Shopping – Pavuna/RJ<br>
+                            Gerencia de Operações na execução e planejamento de obra, viabilidade técnica/financeira e coordenação</li>
+                        </ul>
+                </div>
             </div>
-            <div>
-                <img src="" alt="">
-                <h3>GRUPO SÁ CAVALCANTE</h3>
-                <ul>
-                    <li>Shopping Tijuca/RJ – Coordenação de obras na construção do subsolo de lojas</li>
-                    <li>Shopping Guarulhos/SP – Orçamento e viabilidade técnica</li>
-                    <li>Shopping Praia da Costa/ES - Orçamento da expansão do deck parking</li>
-                </ul>
+            <div class="card-parceiros">
+                <img src="/imagens/parceiros/sa-caval-lg.png" alt="">
+                <div class="text-card-parc">
+                    <h3>GRUPO SÁ CAVALCANTE</h3>
+                    <ul>
+                        <li>Shopping Tijuca/RJ – Coordenação de obras na construção do subsolo de lojas</li>
+                        <li>Shopping Guarulhos/SP – Orçamento e viabilidade técnica</li>
+                        <li>Shopping Praia da Costa/ES - Orçamento da expansão do deck parking</li>
+                    </ul>
+                </div>
             </div>
-            <div>
-                <img src="" alt="">
-                <h3>Brmalls Empreendimentos S/A</h3>
-                <ul>
-                    <li>Shopping Tamboré/SP – Gerenciamento de orçamento, plano de ataque de obras e planejamento de expansão de ABL, e retrofit;</li>
-                    <li>Mooca Shopping Center/SP – Green Field, orçamento para viabilidade técnica e financeira do empreendimento</li>
-                    <li>Shopping Estação BH/MG - Green Field, orçamento para viabilidade técnica e financeira do empreendimento;</li>
-                    <li>Shopping Campo Grande – Retrofit orçamento para equalização de proposta;</li>
-                    <li>Shopping Tijuca – Retrofit, orçamento para viabilidade financeira;</li>
-                    <li>Shopping Plaza Niterói – Retrofit e expansão – orçamento para concorrência e equalização de propostas;</li>
-                    <li>Norte Shopping – Expansão – viabilidade financeira para aprovação de projeto;</li>
-                </ul>
+            <div class="card-parceiros">
+                <img src="/imagens/parceiros/brmalls.png" alt="">
+                <div class="text-card-parc">
+                    <h3>Brmalls Empreendimentos S/A</h3>
+                    <ul>
+                        <li>Shopping Tamboré/SP – Gerenciamento de orçamento, plano de ataque de obras e planejamento de expansão de ABL, e retrofit;</li>
+                        <li>Mooca Shopping Center/SP – Green Field, orçamento para viabilidade técnica e financeira do empreendimento</li>
+                        <li>Shopping Estação BH/MG - Green Field, orçamento para viabilidade técnica e financeira do empreendimento;</li>
+                        <li>Shopping Campo Grande – Retrofit orçamento para equalização de proposta;</li>
+                        <li>Shopping Tijuca – Retrofit, orçamento para viabilidade financeira;</li>
+                        <li>Shopping Plaza Niterói – Retrofit e expansão – orçamento para concorrência e equalização de propostas;</li>
+                        <li>Norte Shopping – Expansão – viabilidade financeira para aprovação de projeto;</li>
+                    </ul>
+                </div>
             </div>
-            <div>
-                <img src="" alt="">
-                <h3>Grupo Saint Gobain – Quartzolit</h3>
-                <ul>
-                    <li>Unidade Fabril Camaçari/BA - Orçamento e Planejamento de Obras</li>
-                </ul>
+            <div class="card-parceiros">
+                <img src="/imagens/parceiros/saintGob-lg.png" alt="">
+                <div class="text-card-parc">
+                    <h3>Grupo Saint Gobain – Quartzolit</h3>
+                    <ul>
+                        <li>Unidade Fabril Camaçari/BA - Orçamento e Planejamento de Obras</li>
+                    </ul>
+                </div>
             </div>
-            <div>
-                <img src="" alt="">
-                <h3>Grupo CCR – Concessionária de Rodovias</h3>
-                <ul>
-                    <li>PR-151 e PR 239/PR - Projeto emergencial de recuperação de estradas - Orçamento e Planejamento de Obras</li>
-                </ul>
+            <div class="card-parceiros">
+                <img src="/imagens/parceiros/ccr-lg.png" alt="">
+                <div class="text-card-parc">
+                    <h3>Grupo CCR – Concessionária de Rodovias</h3>
+                    <ul>
+                        <li>PR-151 e PR 239/PR - Projeto emergencial de recuperação de estradas - Orçamento e Planejamento de Obras</li>
+                    </ul>
+                </div>
             </div>
-            <div>
-                <img src="" alt="">
-                <h3>ROSSI Empreendimentos Imobiliários</h3>
-                <ul>
-                    <li>Residencial Camilla – Irajá/RJ – orçamento e viabilidade financeira para obras de acabamento - PMCMV</li>
-                    <li>Projeto Minha casa Minha Vida 4 a 6SM – Pedra de Guaratiba/RJ -  Estudo e execução de fundações</li>
-                </ul>
+            <div class="card-parceiros">
+                <img src="/imagens/parceiros/rossi-lg.png" alt="">
+                <div class="text-card-parc">
+                    <h3>ROSSI Empreendimentos Imobiliários</h3>
+                    <ul>
+                        <li>Residencial Camilla – Irajá/RJ – orçamento e viabilidade financeira para obras de acabamento - PMCMV</li>
+                        <li>Projeto Minha casa Minha Vida 4 a 6SM – Pedra de Guaratiba/RJ -  Estudo e execução de fundações</li>
+                    </ul>
+                </div>
             </div>
-            <div>
+            <!-- <div class="card-parceiros">
                 <img src="" alt="">
                 <h3>Construtora NORBERTO ODEBRECHT / CBPO Engenharia</h3>
                 <ul>
                     <li>Estação Metro saída Teixeira de Melo – Ipanema/RJ – Gerenciamento da execução para implantação de estrutura metálica e gradil</li>
                 </ul>
+            </div> -->
+            <div class="card-parceiros">
+                <img src="/imagens/parceiros/graham-lg.png" alt="">
+                <div class="text-card-parc">
+                    <h3>GRAHAM PACKAGING Do Brasil Ltda</h3>
+                    <ul>
+                        <li>Parque fabril BAYER Belford Roxo/RJ - Gerenciamento da execução para implantação de estrutura metálica e gradil</li>
+                    </ul>
+                </div>
             </div>
-            <div>
-                <img src="" alt="">
-                <h3>GRAHAM PACKAGING Do Brasil Ltda</h3>
-                <ul>
-                    <li>Parque fabril BAYER Belford Roxo/RJ - Gerenciamento da execução para implantação de estrutura metálica e gradil</li>
-                </ul>
-            </div>
-            <div>
-                <img src="" alt="">
-                <h3>BROOKFIELD Incorporações</h3>
+            <div class="card-parceiros">
+                <img src="/imagens/parceiros/brook-lg.png" alt="">
+                <div class="text-card-parc">
+                    <h3>BROOKFIELD Incorporações</h3>
                 <ul>
                     <li>Condomínio Águas Claras - Residencial Sahy – Mangaratiba/RJ - Gerenciamento da execução para implantação de estrutura metálica e gradil</li>
                 </ul>
+                </div>
             </div>
-            <div>
-                <img src="" alt="">
-                <h3>DIASE Construtora Ltda</h3>
+            <div class="card-parceiros">
+                <img src="/imagens/parceiros/brook-lg.png" alt="">
+                <div class="text-card-parc">
+                    <h3>DIASE Construtora Ltda</h3>
                 <ul>
                     <li>Galpão Logístico Grupo HÉRMES Campo Grande/RJ – Gerenciamento da execução para implantação de estrutura metálica, gradil e alambrado
-
                         ​</li>
                 </ul>
+                </div>
             </div>
-            <div>
-                <img src="" alt="">
-                <h3>Construtora SANTA CECÍLIA do Rio de Janeiro</h3>
+            <div class="card-parceiros">
+                <img src="/imagens/parceiros/sta-cecilia-lg.png" alt="">
+                <div class="text-card-parc">
+                    <h3>Construtora SANTA CECÍLIA do Rio de Janeiro</h3>
                 <ul>
                     <li>Projeto Minha Casa Minha Vida 0 a 3SM – Imbariê, Duque de Caxias/RJ
-
                         Orçamento, planejamento de obra e viabilidade técnica/financeira do empreendimento</li>
                 </ul>
+                </div>
             </div>
-            <div><img src="" alt=""></div>
-            <div><img src="" alt=""></div>
-            <div><img src="" alt=""></div>
-            <div><img src="" alt=""></div>
-            <div><img src="" alt=""></div>
-            <div><img src="" alt=""></div>
-            <div><img src="" alt=""></div>
+            <div class="card-parceiros"><img src="/imagens/parceiros/abl-lg.png" alt=""></div>
+            <div class="card-parceiros"><img src="/imagens/parceiros/construcap-lg.png" alt=""></div>
+            <div class="card-parceiros"><img src="/imagens/parceiros/ctrlTec.png" alt=""></div>
+            <div class="card-parceiros"><img src="/imagens/parceiros/multip-lg.png" alt=""></div>
+            <div class="card-parceiros"><img src="/imagens/parceiros/" alt=""></div>
         </div>
-
-    <section class="quem-somos-container">
+        
+        </section>
+        
+    <section id="quem-somos" class="quem-somos-container">
+        
         <div class="quem-somos-container-image">
-            <img src="" alt="">
+            <img src="/imagens/joao-img.png" alt="" width="600px" style="margin-top: 12%;
+                                                                        border: 4px solid #df8416;
+                                                                        border-radius: 5px;">
         </div>
-        <ul>
-            <li>João Vicente Nunes</li>
-            <li>Técnico Industrial de Edificações</li>
-            <li>Engenharia Civil </li>
-            <li>Administrador de Empresas</li>
-            <li>Coaching Pessoal, Empresarial e PNL</li>
-        </ul>
-        <ul>
-            <li>Descrição do cargo</li>
-            <li>Profissional com mais de 35 anos de experiência em projetos   de   engenharia, execução de obras de pequeno, médio e grande porte,</li>
-            <li>Elaboração de propostas e orçamentos técnicos, planejamento e  análise de elaboração de viabilidade técnica, execução e montagem de caderno técnico e memorial descritivo.</li>
-            <li>Elaboração de relatórios de obras e levantamento aerofotogramétricos, contratação de empreendimentos, controle de qualidade e elaboração de relatórios   dos   suprimentos   e serviços   comprados   e   executados.  • Elaborar normas e documentação técnica.</li>
-        </ul>
-
-        <ul>
-            <li>DESCRIÇÃO DE ATIVIDADES</li>
-            <li> Realizar   estudos   de   viabilidade   técnico-econômica;   prestar   assistência, assessoria e consultoria,</li>
-            <li>Executar   e   fiscalizar   obras   e   serviços   técnicos, conduzir   equipe   de instalação, montagem, operação, reparo ou manutenção,</li>
-            <li>Elaborar projetos, assessorando e supervisionando a sua realização,</li>
-            <li>Orientar e controlar processo de produção ou serviço de manutenção,</li>
-            <li>Projetar a forma de produtos industriais; instalações e sistemas,</li>
-            <li> Pesquisar e elaborar processos,</li>
-            <li>Estudar   e   estabelecer   métodos   de   utilização   eficaz   e   econômica   de materiais e equipamentos, bem como de gerenciamento de pessoal,</li>
-            <li>Executar   outras   tarefas   de   mesma   natureza   e   nível   de   complexidade associadas ao ambiente organizacional,</li>
-        </ul>
+        <div class="info-john">
+            <ul>
+                <h4>João Vicente Nunes</h4>
+                <li>Técnico Industrial de Edificações</li>
+                <li>Engenharia Civil </li>
+                <li>Administrador de Empresas</li>
+                <li>Coaching Pessoal, Empresarial e PNL</li>
+            </ul>
+            <ul>
+                <h4>Descrição do cargo</h4>
+                <li>Profissional com mais de 35 anos de experiência em projetos   de   engenharia, execução de obras de pequeno, médio e grande porte,</li>
+                <li>Elaboração de propostas e orçamentos técnicos, planejamento e  análise de elaboração de viabilidade técnica, execução e montagem de caderno técnico e memorial descritivo.</li>
+                <li>Elaboração de relatórios de obras e levantamento aerofotogramétricos, contratação de empreendimentos, controle de qualidade e elaboração de relatórios   dos   suprimentos   e serviços   comprados   e   executados.  • Elaborar normas e documentação técnica.</li>
+            </ul>
+    
+            <ul>
+                <h4>DESCRIÇÃO DE ATIVIDADES</h4>
+                <li> Realizar   estudos   de   viabilidade   técnico-econômica;   prestar   assistência, assessoria e consultoria,</li>
+                <li>Executar   e   fiscalizar   obras   e   serviços   técnicos, conduzir   equipe   de instalação, montagem, operação, reparo ou manutenção,</li>
+                <li>Elaborar projetos, assessorando e supervisionando a sua realização,</li>
+                <li>Orientar e controlar processo de produção ou serviço de manutenção,</li>
+                <li>Projetar a forma de produtos industriais; instalações e sistemas,</li>
+                <li> Pesquisar e elaborar processos,</li>
+                <li>Estudar   e   estabelecer   métodos   de   utilização   eficaz   e   econômica   de materiais e equipamentos, bem como de gerenciamento de pessoal,</li>
+                <li>Executar   outras   tarefas   de   mesma   natureza   e   nível   de   complexidade associadas ao ambiente organizacional,</li>
+            </ul>
+        </div>
+        
     </section>
+    <span class="btn"><a href="#">Fale Conosco</a></span>
     <footer class="footer">
+        
         <div class="top-footer">
             <address class="address-container-footer">
                 <p>E-mail: izatech.brasil@gmail.com</p>
                 <p>Endereço:  Rua Dr. Bormann, 43 -Sala 705 Parte</p>
                 <p>Centro, Niterói/RJ - 24020-320</p>
+                <p>+55 21 9 8318-5882</p>
             </address>
             <div class="redes-sociais">
-                <span class=""></span>
-                    <span class=""></span>
-                    <span class=""></span>
-                    <span class=""></span>
+                    <a href="https://www.facebook.com/IZATECH.BRASIL" target="_blank"><span class="icone-f icon-facebook2"></span></a>
+                    <a href="https://www.linkedin.com/in/izatech-gerenciamento-empreendedorismo-gest%C3%A3o-de-neg%C3%B3cios-62798587/" target="_blank"><span class=" icone-f icon-linkedin"></span></a>
+                    <a href="https://www.instagram.com/izatech.gerenciamento/" target="_blank"><span class=" icone-f icon-instagram"></span></a>
+                    <a href="https://twitter.com/izatech11" target="_blank"><span class=" icone-f icon-twitter"></span></a>
             </div>
         </div>
         <div class="bottom-footer">
-            <div class="tel-footer">+55 21 9 8318-5882</div>
-            <p>&copy; 2022 por Izatech Info<br>
-               Desenvolvido por Caio Prado</p>
+            
+                <p>&copy; 2022 por Izatech Info</p>
+            
+            <p>Desenvolvido por Caio Prado</p>
 
         </div>
     </footer>
-    </section>
 
     <script src="./JS/main.js"></script>
 </body>
