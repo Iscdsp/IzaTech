@@ -8,9 +8,11 @@
     <link rel="stylesheet" href="./css/index/style.css">
     <link rel="stylesheet" href="./css/config/reset.css">
     <link rel="stylesheet" href="./css/config/icons/font.css">
-    <title>Home Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>IzaTech</title>
 </head>
-<body class="body">
+<body class="body" id="body" onload="aparecerIzatech()">
     <header id="header" class="header">
         <div class="logo-redesSociais-bandeira">
             <img src="./imagens/logo-izatech.png" alt="Logo da Izatech" width="80px" height="70px">
@@ -38,7 +40,7 @@
         </nav>
     </aside>
     
-        <div class="izatech-container">
+    <div class="izatech-container">
             <div class="container-iza">
                 <span><p>IZATECH</p></span>
                 <span><p class="monoton-type">juntos mudamos o mundo!</p></span>
@@ -85,8 +87,7 @@
                 </blockquote>
                 
             </div> 
-        </article> 
-           
+        </article>            
     </section>
     <span class="btn"><a href="#" >Fale Conosco</a></span>
     <div class="smart-card"></div>
@@ -104,29 +105,29 @@
         <div class="escopo-blln">
             <h2>O que Conhecemos, e BEM!! - Gerenciamento</h2>
             <div class="container-balloons">
-                <div class="blln front-balloon">
+                <div class="bllnf front-balloon" onclick="aparecerBaloes()">
                         <p><strong>São Nove</strong></p>
                         <p><strong>as áreas de</strong></p> 
                         <p><strong> conhecimento</strong></p>
                 </div>
-                <div class="container-bllns">
-                    <div class="blln">
+                <div id="blnColuna1" class="container-bllns">
+                    <div  class="blln">
                         <p><strong>Gerenciamento</strong></p>
                         <p><strong>da</strong></p>
                         <p><strong>Comunicação</strong></p>
                     </div>
-                    <div class="blln">
+                    <div  class="blln">
                         <p><strong>Gerenciamento</strong></p>
                         <p><strong>do</strong></p>
                         <p><strong>Escopo</strong></p>
                     </div>
-                    <div class="blln">
+                    <div  class="blln">
                         <p><strong>Gerenciamento</strong></p>
                         <p><strong>do</strong></p>
                         <p><strong>Risco</strong></p>
                     </div>
                 </div>
-                <div class="container-bllns">
+                <div id="blnColuna2" class="container-bllns">
                     <div class="blln">
                         <p><strong>Gerenciamento</strong></p>
                         <p><strong>da</strong></p>
@@ -143,7 +144,7 @@
                         <p><strong>RH</strong></p>
                     </div>
                 </div>
-                <div class="container-bllns">
+                <div id="blnColuna3" class="container-bllns">
                     <div class="blln">
                         <p><strong>Gerenciamento</strong></p>
                         <p><strong>da</strong></p>
@@ -257,23 +258,23 @@
             <p>Valorizar relações duradouras, seguras e com alta perspectiva de crescimento técnico/financeiro nos coloca como o parceiro ideal para a representação, apresentação, comercialização e garantia de pós-venda para o cliente final.</p>
         </fieldset>
     </section>
-    <section class="parceiros-container">
-        <div class="parceria-texto-imagem">
-            <div class="parc-img-cont">
-                <img src="/imagens/fortalecer-ori.jpg" alt="" class="fort-11-img" >
-                <img src="/imagens/fortalecer.png" alt="" class="fort-22-img">
+    <section class="parceiros-container" >
+        <div class="parceria-texto-imagem" >
+            <div class="parc-img-cont" onmousemove= "aparecerEfeito1()" onmouseleave="tirarEfeito()">
+                <img src="/imagens/fortalecer-ori.jpg" alt="" class="fort-11-img"   >
+                <img id="img1" src="/imagens/fortalecer.png" alt="" class="fort-22-img" >
             </div>
-            <div class="texto-parc">
+            <div id="texto1" class="texto-parc" onmousemove= "aparecerEfeito1()" onmouseleave="tirarEfeito()">
                 <h2>Fortalecemos Nossa Parceria e Nossos Parceiros</h2>
                 <p>Nossas parcerias são eternas. Não há negócios sem equilíbrio e não há empreendedores sem comprometimento. Negociamos com seriedade, confiabilidade, credibilidade e  transparência.</p>
             </div>
         </div>
         <div class="parceria-texto-imagem">
-            <div class="parc-img-cont">
-                <img src="/imagens/fortalecer-2.png" alt="" class="fort-2-img" >
+            <div class="parc-img-cont" onmousemove= "aparecerEfeito2()" onmouseleave="tirarEfeito()">
+                <img id="img2" src="/imagens/fortalecer-2.png" alt="" class="fort-2-img" >
                 <img src="/imagens/fortalecer-ori-2.jpg" class="fort-1-img" alt="">
             </div>
-            <div class="texto-parc">
+            <div id="texto2" class="texto-parc" onmousemove= "aparecerEfeito2()" onmouseleave="tirarEfeito()">
 
                 <h2>Nossos Parceiros Investem no Retorno e Nós Investimos Neles</h2>
                 <p class="text-decl">“Uma pessoa só está sentada em uma sombra hoje porque outra plantou uma árvore há muito tempo atrás.”</p>
@@ -283,12 +284,12 @@
         </section>
 
 
-        <section class="container-img-partners">
+        <section class="container-img-partners " >
             <h1>GRANDES PARCEIROS EM GRANDES PROJETOS</h1>
-        <div class="container-thumbs-parceiros">
-            <div class="card-parceiros ">
-                <img src="/imagens/parceiros/hill-lg.png" alt="">
-                <div class="text-card-parc ">
+        <div class="container-thumbs-parceiros slider">
+            <div  class="card-parceiros " >
+                <img src="/imagens/parceiros/hill-lg.png"  alt="" onmousemove="mostrarTexto10()" onmouseleave="removeTexto10()">
+                <div id="p10" class="text-card-parc  " onmousemove="mostrarTexto10()" onmouseleave="removeTexto10()">
                     <h3>HILL International Inc.</h3>
                 <ul>
                     <li>GRAND HYATT HOTELS/RJ – Barra da Tijuca/RJ<br>
@@ -296,9 +297,9 @@
                 </ul>
                 </div>
             </div>
-            <div class="card-parceiros">
-                <img src="/imagens/parceiros/jpProj-lg.png" alt="">
-                <div class="text-card-parc">
+            <div  class="card-parceiros" >
+                <img src="/imagens/parceiros/jpProj-lg.png" alt=""  onmousemove="mostrarTexto11()" onmouseleave="removeTexto11()">
+                <div id="p11" class="item text-card-parc" onmousemove="mostrarTexto11()" onmouseleave="removeTexto11()">
                     <h3>G3 Empreendimentos / JP Projetos</h3>
                     <ul>
                         <li>VIA PAVUNA Shopping – Pavuna/RJ<br>
@@ -306,9 +307,9 @@
                         </ul>
                 </div>
             </div>
-            <div class="card-parceiros">
-                <img src="/imagens/parceiros/sa-caval-lg.png" alt="">
-                <div class="text-card-parc">
+            <div  class="card-parceiros" >
+                <img src="/imagens/parceiros/sa-caval-lg.png" alt="" onmousemove="mostrarTexto1()" onmouseleave="removeTexto1()">
+                <div  id="p01" class="item text-card-parc" onmousemove="mostrarTexto1()" onmouseleave="removeTexto1()">
                     <h3>GRUPO SÁ CAVALCANTE</h3>
                     <ul>
                         <li>Shopping Tijuca/RJ – Coordenação de obras na construção do subsolo de lojas</li>
@@ -317,9 +318,9 @@
                     </ul>
                 </div>
             </div>
-            <div class="card-parceiros">
-                <img src="/imagens/parceiros/brmalls.png" alt="">
-                <div class="text-card-parc">
+            <div  class="card-parceiros">
+                <img src="/imagens/parceiros/brmalls.png" alt="" onmousemove="mostrarTexto2()" onmouseleave="removeTexto2()">
+                <div id="p02" class="item text-card-parc" onmousemove="mostrarTexto2()" onmouseleave="removeTexto2()">
                     <h3>Brmalls Empreendimentos S/A</h3>
                     <ul>
                         <li>Shopping Tamboré/SP – Gerenciamento de orçamento, plano de ataque de obras e planejamento de expansão de ABL, e retrofit;</li>
@@ -332,27 +333,27 @@
                     </ul>
                 </div>
             </div>
-            <div class="card-parceiros">
-                <img src="/imagens/parceiros/saintGob-lg.png" alt="">
-                <div class="text-card-parc">
+            <div   class="card-parceiros">
+                <img src="/imagens/parceiros/saintGob-lg.png" alt=""onmousemove="mostrarTexto3()" onmouseleave="removeTexto3()">
+                <div id="p03" class="item text-card-parc"onmousemove="mostrarTexto3()" onmouseleave="removeTexto3()">
                     <h3>Grupo Saint Gobain – Quartzolit</h3>
                     <ul>
                         <li>Unidade Fabril Camaçari/BA - Orçamento e Planejamento de Obras</li>
                     </ul>
                 </div>
             </div>
-            <div class="card-parceiros">
-                <img src="/imagens/parceiros/ccr-lg.png" alt="">
-                <div class="text-card-parc">
+            <div  class="card-parceiros">
+                <img src="/imagens/parceiros/ccr-lg.png" alt=""onmousemove="mostrarTexto4()" onmouseleave="removeTexto4()">
+                <div id="p04" class="item text-card-parc"onmousemove="mostrarTexto4()" onmouseleave="removeTexto4()">
                     <h3>Grupo CCR – Concessionária de Rodovias</h3>
                     <ul>
                         <li>PR-151 e PR 239/PR - Projeto emergencial de recuperação de estradas - Orçamento e Planejamento de Obras</li>
                     </ul>
                 </div>
             </div>
-            <div class="card-parceiros">
-                <img src="/imagens/parceiros/rossi-lg.png" alt="">
-                <div class="text-card-parc">
+            <div  class="card-parceiros">
+                <img src="/imagens/parceiros/rossi-lg.png" alt=""onmousemove="mostrarTexto5()" onmouseleave="removeTexto5()">
+                <div id="p05" class="item text-card-parc"onmousemove="mostrarTexto5()" onmouseleave="removeTexto5()">
                     <h3>ROSSI Empreendimentos Imobiliários</h3>
                     <ul>
                         <li>Residencial Camilla – Irajá/RJ – orçamento e viabilidade financeira para obras de acabamento - PMCMV</li>
@@ -360,25 +361,18 @@
                     </ul>
                 </div>
             </div>
-            <!-- <div class="card-parceiros">
-                <img src="" alt="">
-                <h3>Construtora NORBERTO ODEBRECHT / CBPO Engenharia</h3>
-                <ul>
-                    <li>Estação Metro saída Teixeira de Melo – Ipanema/RJ – Gerenciamento da execução para implantação de estrutura metálica e gradil</li>
-                </ul>
-            </div> -->
-            <div class="card-parceiros">
-                <img src="/imagens/parceiros/graham-lg.png" alt="">
-                <div class="text-card-parc">
+            <div  class="card-parceiros">
+                <img src="/imagens/parceiros/graham-lg.png" alt=""onmousemove="mostrarTexto6()" onmouseleave="removeTexto6()">
+                <div id="p06" class="item text-card-parc"onmousemove="mostrarTexto6()" onmouseleave="removeTexto6()">
                     <h3>GRAHAM PACKAGING Do Brasil Ltda</h3>
                     <ul>
                         <li>Parque fabril BAYER Belford Roxo/RJ - Gerenciamento da execução para implantação de estrutura metálica e gradil</li>
                     </ul>
                 </div>
             </div>
-            <div class="card-parceiros">
-                <img src="/imagens/parceiros/brook-lg.png" alt="">
-                <div class="text-card-parc">
+            <div  class="card-parceiros">
+                <img src="/imagens/parceiros/brook-lg.png" alt=""onmousemove="mostrarTexto7()" onmouseleave="removeTexto7()">
+                <div id="p07" class="item text-card-parc" onmousemove="mostrarTexto7()" onmouseleave="removeTexto7()">
                     <h3>BROOKFIELD Incorporações</h3>
                 <ul>
                     <li>Condomínio Águas Claras - Residencial Sahy – Mangaratiba/RJ - Gerenciamento da execução para implantação de estrutura metálica e gradil</li>
@@ -386,8 +380,8 @@
                 </div>
             </div>
             <div class="card-parceiros">
-                <img src="/imagens/parceiros/brook-lg.png" alt="">
-                <div class="text-card-parc">
+                <img src="/imagens/parceiros/brook-lg.png" alt="" onmousemove="mostrarTexto8()" onmouseleave="removeTexto8()">
+                <div id="p08" class="item text-card-parc" onmousemove="mostrarTexto8()" onmouseleave="removeTexto8()">
                     <h3>DIASE Construtora Ltda</h3>
                 <ul>
                     <li>Galpão Logístico Grupo HÉRMES Campo Grande/RJ – Gerenciamento da execução para implantação de estrutura metálica, gradil e alambrado
@@ -396,8 +390,8 @@
                 </div>
             </div>
             <div class="card-parceiros">
-                <img src="/imagens/parceiros/sta-cecilia-lg.png" alt="">
-                <div class="text-card-parc">
+                <img src="/imagens/parceiros/sta-cecilia-lg.png" alt="" onmousemove="mostrarTexto9()" onmouseleave="removeTexto9()">
+                <div id="p09" class="item text-card-parc" onmousemove="mostrarTexto9()" onmouseleave="removeTexto9()">
                     <h3>Construtora SANTA CECÍLIA do Rio de Janeiro</h3>
                 <ul>
                     <li>Projeto Minha Casa Minha Vida 0 a 3SM – Imbariê, Duque de Caxias/RJ
@@ -475,8 +469,19 @@
 
         </div>
     </footer>
-
-    <script src="./JS/main.js"></script>
+    <script src="/JS/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js" integrity="sha512-eP8DK17a+MOcKHXC5Yrqzd8WI5WKh6F1TIk5QZ/8Lbv+8ssblcz7oGC8ZmQ/ZSAPa7ZmsCU4e/hcovqR8jfJqA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $('.slider').slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 3,
+  autoplay: true,
+  autoplaySpeed: 2000
+});
+    </script>
+        <script src="./JS/main.js"></script>
 </body>
 </html>
 
